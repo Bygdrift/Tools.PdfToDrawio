@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!--Notice to Bygdrift developer: Create nuget package: dotnet pack-->
+    <TargetFramework>net5.0</TargetFramework>
+    <Version>0.1.1</Version>
+    <Authors>kenboc</Authors>
+    <Company>Bygdrift</Company>
+    <Description>Convert a pdf or svg to diagrams.net format: drawio or xml.</Description>
+    <Copyright>https://github.com/Bygdrift/PdfToDrawio/blob/master/License.md</Copyright>
+    <PackageProjectUrl>https://github.com/Bygdrift/PdfToDrawio</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Bygdrift/PdfToDrawio.git</RepositoryUrl>
+    <PackageTags>diagrams.net,drawio</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageId>Bygdrift.PdfToDrawio</PackageId>
+    <Product>Bygdrift.PdfToDrawio</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <AssemblyVersion>0.1.1.0</AssemblyVersion>
+    <FileVersion>0.1.1.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PdfToSvg.NET" Version="0.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
