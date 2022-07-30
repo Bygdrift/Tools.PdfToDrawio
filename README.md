@@ -1,3 +1,7 @@
+# Scripts
+
+[![NuGet version (ScriptCs.Hosting)](https://img.shields.io/nuget/v/ScriptCs.Hosting.svg?style=flat-square)](https://www.nuget.org/packages/Bygdrift.Tools.PdfToDrawio)
+
 # PdfToDrawio
 
 With this project, you can convert a pdf or svg-file to a drawio-file. Drawio-files can be read with [Diagrams.net](https://www.diagrams.net), which is an excellent, free diagramming and vector graphics application, that can be used [online](https://app.diagrams.net), as a [desktop-program](https://github.com/jgraph/drawio-desktop/releases/tag/v14.9.6) and as a [plugin to visual studio code](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio).
