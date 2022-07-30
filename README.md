@@ -10,12 +10,9 @@ The reason for this project, was the need of making an extension to an FM system
 - Description of correction to be done [like this](https://raw.githubusercontent.com/Bygdrift/PdfToDrawio/master/Documentation/Images/Revision_cloud.png)
 - interior design plan
 
-# How to use it
-
-## Nuget
 It's available as a [Nuget package](https://www.nuget.org/packages/Bygdrift.Tools.PdfToDrawio)
 
-## Code
+# The code
 
 How to parse a pdf or svg and get it returned as drawio:
 ```c#
