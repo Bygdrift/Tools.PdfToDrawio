@@ -10,12 +10,10 @@ The reason for this project, was the need of making an extension to an FM system
 - Description of correction to be done [like this](https://raw.githubusercontent.com/Bygdrift/PdfToDrawio/master/Documentation/Images/Revision_cloud.png)
 - interior design plan
 
-
 # How to use it
 
 ## Nuget
-[![NuGet version (ScriptCs.Hosting)](https://img.shields.io/nuget/v/Bygdrift.Tools.PdfToDrawio)](https://www.nuget.org/packages/Bygdrift.Tools.PdfToDrawio)
-[![NuGet version (ScriptCs.Hosting)](https://img.shields.io/nuget/dt/Bygdrift.Tools.PdfToDrawio)](https://www.nuget.org/packages/Bygdrift.Tools.PdfToDrawio)
+It's available as a [Nuget package](https://www.nuget.org/packages/Bygdrift.Tools.PdfToDrawio)
 
 ## Code
 
