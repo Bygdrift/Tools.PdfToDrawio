@@ -1,25 +1,27 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <!--Notice to Bygdrift developer: Create nuget package: dotnet pack-->
-    <TargetFramework>net5.0</TargetFramework>
-    <Version>0.1.1</Version>
+	<TargetFramework>net6.0</TargetFramework>
+    <Version>0.2.0</Version>
     <Authors>kenboc</Authors>
     <Company>Bygdrift</Company>
     <Description>Convert a pdf or svg to diagrams.net format: drawio or xml.</Description>
-    <Copyright>https://github.com/Bygdrift/PdfToDrawio/blob/master/License.md</Copyright>
-    <PackageProjectUrl>https://github.com/Bygdrift/PdfToDrawio</PackageProjectUrl>
+    <Copyright>https://github.com/Bygdrift/Tools.PdfToDrawio/blob/master/License.md</Copyright>
+    <PackageProjectUrl>https://github.com/Bygdrift/Tools.PdfToDrawio</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
-    <RepositoryUrl>https://github.com/Bygdrift/PdfToDrawio.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Bygdrift/Tools.PdfToDrawio.git</RepositoryUrl>
     <PackageTags>diagrams.net,drawio</PackageTags>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
-    <PackageId>Bygdrift.PdfToDrawio</PackageId>
-    <Product>Bygdrift.PdfToDrawio</Product>
+	<AssemblyName>Bygdrift.Tools.PdfToDrawio</AssemblyName>
+	<PackageId>Bygdrift.Tools.PdfToDrawio</PackageId>
+    <Product>Bygdrift.Tools.PdfToDrawio</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes></PackageReleaseNotes>
-    <AssemblyVersion>0.1.1.0</AssemblyVersion>
-    <FileVersion>0.1.1.0</FileVersion>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<PackageReleaseNotes>
+		Upgraded to .net 6.
+		Changed namespacing from Bygdrift.PdfToDrawio to Bygdrift.Tools.PdfToDrawio.
+	</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

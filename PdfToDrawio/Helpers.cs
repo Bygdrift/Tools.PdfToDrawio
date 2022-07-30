@@ -5,10 +5,12 @@ using System.Text;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Bygdrift.PdfToDrawio
+namespace Bygdrift.Tools.PdfToDrawio
 {
+    /// <summary>Helpers</summary>
     public class Helpers
     {
+        /// <summary>Convert a string to zip</summary>
         public static byte[] ZipStr(String str)
         {
             using var output = new MemoryStream();
@@ -18,7 +20,8 @@ namespace Bygdrift.PdfToDrawio
 
             return output.ToArray();
         }
-
+        
+        /// <summary>Unzip a string</summary>
         public static string UnZipStr(byte[] input)
         {
             using var inputStream = new MemoryStream(input);

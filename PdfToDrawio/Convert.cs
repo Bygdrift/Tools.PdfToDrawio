@@ -1,15 +1,17 @@
-﻿using Bygdrift.PdfToDrawio.Drawio.Models;
+﻿using Bygdrift.Tools.PdfToDrawio.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml.Linq;
 
-namespace Bygdrift.PdfToDrawio
+namespace Bygdrift.Tools.PdfToDrawio
 {
+    /// <summary>Convert</summary>
     public class Convert
     {
         internal readonly MxGraphModel GraphModel;
 
+        /// <summary>Convert</summary>
         public Convert(Stream stream, Format? format)
         {
             if (stream != null)
@@ -54,7 +56,7 @@ namespace Bygdrift.PdfToDrawio
             DrawioFileOut.ToFile(GraphModel, outputFile);
         }
 
-        /// <param name="outputFile">A filepath to where the drawio-file can be saved</param>
+        /// <summary>Convert to Drawio</summary>
         public Stream ToDrawIo()
         {
             return DrawioFileOut.ToStream(GraphModel);
@@ -87,11 +89,5 @@ namespace Bygdrift.PdfToDrawio
             if (fileExtension != extension.ToLower())
                 throw new Exception($"The extension on the file path should be {extension.ToLower()}, but it is {fileExtension}.");
         }
-    }
-
-    public enum Format
-    {
-        PDF,
-        SVG
     }
 }

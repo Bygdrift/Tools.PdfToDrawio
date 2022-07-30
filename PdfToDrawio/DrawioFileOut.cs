@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Bygdrift.Tools.PdfToDrawio.Models;
+using System;
 using System.IO;
 using System.Text;
 using System.Xml.Linq;
 
-namespace Bygdrift.PdfToDrawio
+namespace Bygdrift.Tools.PdfToDrawio
 {
     internal class DrawioFileOut
     {

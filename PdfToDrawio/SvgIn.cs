@@ -1,26 +1,36 @@
 ﻿using System;
-using System.Text;
-using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
-namespace Bygdrift.PdfToDrawio.Drawio.Models
+namespace Bygdrift.Tools.PdfToDrawio
 {
+    /// <summary>Import of the svg</summary>
     public class SvgIn
     {
-        public string SvgAsString { get; }
-        public XDocument Document { get; }
-
+        /// <summary>Height of the paper</summary>
         public double HeightAsPoints;
-        public double WidthAsPoints;
-        public double HeightAsDecimatedInches { get { return Math.Round(HeightAsPoints * 1.38888889, 3); } }  //Howto convert: https://www.unitconverters.net/typography-converter.html
-        public double WidthAsDecimatedInches { get { return Math.Round(WidthAsPoints * 1.38888889, 3); } }
 
+        /// <summary>Width of the paper</summary>
+        public double WidthAsPoints;
+
+        /// <summary>Import of the svg</summary>
         public SvgIn(string svg)
         {
             SvgAsString = svg;
             Document = XDocument.Parse(SvgAsString);
             CalculateWidthAndHeight();
         }
+
+        /// <summary>The svg</summary>
+        public string SvgAsString { get; }
+
+        /// <summary>The document</summary>
+        public XDocument Document { get; }
+
+        /// <summary>Height of the paper</summary>
+        public double HeightAsDecimatedInches { get { return Math.Round(HeightAsPoints * 1.38888889, 3); } }  //Howto convert: https://www.unitconverters.net/typography-converter.html
+
+        /// <summary>Width of the paper</summary>
+        public double WidthAsDecimatedInches { get { return Math.Round(WidthAsPoints * 1.38888889, 3); } }
 
         private void CalculateWidthAndHeight()
         {
